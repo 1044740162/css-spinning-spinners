@@ -1,24 +1,9 @@
-.load1 .loader,
-.load1 .loader:before,
-.load1 .loader:after {
-  background: #FFF;
+.load1 .loader {
   -webkit-animation: load1 1s infinite ease-in-out;
   animation: load1 1s infinite ease-in-out;
   width: 1em;
   height: 4em;
-}
-.load1 .loader:before,
-.load1 .loader:after {
-  position: absolute;
-  top: 0;
-  content: '';
-}
-.load1 .loader:before {
-  left: -1.5em;
-  -webkit-animation-delay: -0.32s;
-  animation-delay: -0.32s;
-}
-.load1 .loader {
+  background: #fff;
   text-indent: -9999em;
   margin: 8em auto;
   position: relative;
@@ -26,33 +11,58 @@
   -webkit-transform: translateZ(0);
   -ms-transform: translateZ(0);
   transform: translateZ(0);
-  -webkit-animation-delay: -0.16s;
-  animation-delay: -0.16s;
-}
-.load1 .loader:after {
-  left: 1.5em;
 }
 @-webkit-keyframes load1 {
   0%,
-  80%,
   100% {
-    box-shadow: 0 0 #FFF;
-    height: 4em;
+    box-shadow: -1.5em 0em 0 0em #ffffff, 1.5em 0em 0 0em #ffffff, -1.5em 0em 0 0em #ffffff, -1.5em 0em 0 0em #ffffff, 0em 0em 0 0em #ffffff, 0em 0em 0 0em #ffffff, 1.5em 0em 0 0em #ffffff, 1.5em 0em 0 0em #ffffff;
   }
-  40% {
-    box-shadow: 0 -2em #ffffff;
-    height: 5em;
+  12.5% {
+    box-shadow: -1.5em 0em 0 0em #ffffff, 1.5em 0em 0 0em #ffffff, -1.5em -1em 0 0em #ffffff, -1.5em 1em 0 0em #ffffff, 0em 0em 0 0em #ffffff, 0em 0em 0 0em #ffffff, 1.5em 0em 0 0em #ffffff, 1.5em 0em 0 0em #ffffff;
+  }
+  25% {
+    box-shadow: -1.5em 0em 0 0em #ffffff, 1.5em 0em 0 0em #ffffff, -1.5em -2em 0 0em #ffffff, -1.5em 2em 0 0em #ffffff, 0em 0em 0 0em #ffffff, 0em 0em 0 0em #ffffff, 1.5em 0em 0 0em #ffffff, 1.5em 0em 0 0em #ffffff;
+  }
+  37.5% {
+    box-shadow: -1.5em 0em 0 0em #ffffff, 1.5em 0em 0 0em #ffffff, -1.5em -1em 0 0em #ffffff, -1.5em 1em 0 0em #ffffff, 0em -1em 0 0em #ffffff, 0em 1em 0 0em #ffffff, 1.5em 0em 0 0em #ffffff, 1.5em 0em 0 0em #ffffff;
+  }
+  50% {
+    box-shadow: -1.5em 0em 0 0em #ffffff, 1.5em 0em 0 0em #ffffff, -1.5em 0em 0 0em #ffffff, -1.5em 0em 0 0em #ffffff, 0em -2em 0 0em #ffffff, 0em 2em 0 0em #ffffff, 1.5em 0em 0 0em #ffffff, 1.5em 0em 0 0em #ffffff;
+  }
+  62.5% {
+    box-shadow: -1.5em 0em 0 0em #ffffff, 1.5em 0em 0 0em #ffffff, -1.5em 0em 0 0em #ffffff, -1.5em 0em 0 0em #ffffff, 0em -1em 0 0em #ffffff, 0em 1em 0 0em #ffffff, 1.5em -1em 0 0em #ffffff, 1.5em 1em 0 0em #ffffff;
+  }
+  75% {
+    box-shadow: -1.5em 0em 0 0em #ffffff, 1.5em 0em 0 0em #ffffff, -1.5em 0em 0 0em #ffffff, -1.5em 0em 0 0em #ffffff, 0em 0em 0 0em #ffffff, 0em 0em 0 0em #ffffff, 1.5em -2em 0 0em #ffffff, 1.5em 2em 0 0em #ffffff;
+  }
+  87.5% {
+    box-shadow: -1.5em 0em 0 0em #ffffff, 1.5em 0em 0 0em #ffffff, -1.5em 0em 0 0em #ffffff, -1.5em 0em 0 0em #ffffff, 0em 0em 0 0em #ffffff, 0em 0em 0 0em #ffffff, 1.5em -1em 0 0em #ffffff, 1.5em 1em 0 0em #ffffff;
   }
 }
 @keyframes load1 {
   0%,
-  80%,
   100% {
-    box-shadow: 0 0 #FFF;
-    height: 4em;
+    box-shadow: -1.5em 0em 0 0em #ffffff, 1.5em 0em 0 0em #ffffff, -1.5em 0em 0 0em #ffffff, -1.5em 0em 0 0em #ffffff, 0em 0em 0 0em #ffffff, 0em 0em 0 0em #ffffff, 1.5em 0em 0 0em #ffffff, 1.5em 0em 0 0em #ffffff;
   }
-  40% {
-    box-shadow: 0 -2em #ffffff;
-    height: 5em;
+  12.5% {
+    box-shadow: -1.5em 0em 0 0em #ffffff, 1.5em 0em 0 0em #ffffff, -1.5em -1em 0 0em #ffffff, -1.5em 1em 0 0em #ffffff, 0em 0em 0 0em #ffffff, 0em 0em 0 0em #ffffff, 1.5em 0em 0 0em #ffffff, 1.5em 0em 0 0em #ffffff;
+  }
+  25% {
+    box-shadow: -1.5em 0em 0 0em #ffffff, 1.5em 0em 0 0em #ffffff, -1.5em -2em 0 0em #ffffff, -1.5em 2em 0 0em #ffffff, 0em 0em 0 0em #ffffff, 0em 0em 0 0em #ffffff, 1.5em 0em 0 0em #ffffff, 1.5em 0em 0 0em #ffffff;
+  }
+  37.5% {
+    box-shadow: -1.5em 0em 0 0em #ffffff, 1.5em 0em 0 0em #ffffff, -1.5em -1em 0 0em #ffffff, -1.5em 1em 0 0em #ffffff, 0em -1em 0 0em #ffffff, 0em 1em 0 0em #ffffff, 1.5em 0em 0 0em #ffffff, 1.5em 0em 0 0em #ffffff;
+  }
+  50% {
+    box-shadow: -1.5em 0em 0 0em #ffffff, 1.5em 0em 0 0em #ffffff, -1.5em 0em 0 0em #ffffff, -1.5em 0em 0 0em #ffffff, 0em -2em 0 0em #ffffff, 0em 2em 0 0em #ffffff, 1.5em 0em 0 0em #ffffff, 1.5em 0em 0 0em #ffffff;
+  }
+  62.5% {
+    box-shadow: -1.5em 0em 0 0em #ffffff, 1.5em 0em 0 0em #ffffff, -1.5em 0em 0 0em #ffffff, -1.5em 0em 0 0em #ffffff, 0em -1em 0 0em #ffffff, 0em 1em 0 0em #ffffff, 1.5em -1em 0 0em #ffffff, 1.5em 1em 0 0em #ffffff;
+  }
+  75% {
+    box-shadow: -1.5em 0em 0 0em #ffffff, 1.5em 0em 0 0em #ffffff, -1.5em 0em 0 0em #ffffff, -1.5em 0em 0 0em #ffffff, 0em 0em 0 0em #ffffff, 0em 0em 0 0em #ffffff, 1.5em -2em 0 0em #ffffff, 1.5em 2em 0 0em #ffffff;
+  }
+  87.5% {
+    box-shadow: -1.5em 0em 0 0em #ffffff, 1.5em 0em 0 0em #ffffff, -1.5em 0em 0 0em #ffffff, -1.5em 0em 0 0em #ffffff, 0em 0em 0 0em #ffffff, 0em 0em 0 0em #ffffff, 1.5em -1em 0 0em #ffffff, 1.5em 1em 0 0em #ffffff;
   }
 }
