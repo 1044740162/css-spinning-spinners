@@ -187,7 +187,7 @@ h1 {
   margin: 0 auto;
 }
 .load-container {
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(13, 206, 203, 0.2);
   width: 240px;
   height: 240px;
   float: left;
@@ -195,6 +195,7 @@ h1 {
   overflow: hidden;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+  background: #fff;
 }
 .load-container a:link,
 .load-container a:visited {

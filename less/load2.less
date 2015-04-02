@@ -1,3 +1,4 @@
+@loadercolor: #000;
 .load2 .loader:before {
   content:"";
   display:block;
@@ -20,12 +21,12 @@
 
 .load2-frames() {
   0% {
-    box-shadow: -2.75em -2.75em 0 2.25em #fff, 2.75em 2.75em 0 2.25em #fff;
+    box-shadow: -2.75em -2.75em 0 2.25em @loadercolor, 2.75em 2.75em 0 2.25em @loadercolor;
   }
   50% {
-     box-shadow: 2.75em -2.75em 0 2.25em #fff, -2.75em 2.75em 0 2.25em #fff;
+     box-shadow: 2.75em -2.75em 0 2.25em @loadercolor, -2.75em 2.75em 0 2.25em @loadercolor;
   }
   100% {
-     box-shadow: 2.75em 2.75em 0 2.25em #fff, -2.75em -2.75em 0 2.25em #fff;
+     box-shadow: 2.75em 2.75em 0 2.25em @loadercolor, -2.75em -2.75em 0 2.25em @loadercolor;
   }
 }

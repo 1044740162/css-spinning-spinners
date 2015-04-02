@@ -1,3 +1,4 @@
+@loadercolor: #000;
 .load5 .loader:before {
   content:"";
   display:block;
@@ -20,84 +21,84 @@
 @keyframes load5 {.load5-frames;}
 .load5-frames() {
   0%,100% {
-  box-shadow:0em -4em 0em 0em rgba(255,255,255,1),
-    2.8em -2.8em 0 0em rgba(255,255,255,0.2),
-    4em 0em 0 0em rgba(255,255,255,0.2),
-    2.8em 2.8em 0 0em rgba(255,255,255,0.2),
-    0em 4em 0 0em rgba(255,255,255,0.2),
-    -2.8em 2.8em 0 0em rgba(255,255,255,0.2),
-    -4em 0em 0 0em rgba(255,255,255,0.5),
-    -2.8em -2.8em 0 0em rgba(255,255,255,0.7);
+  box-shadow:0em -4em 0em 0em @loadercolor,
+    2.8em -2.8em 0 0em fadeout(@loadercolor, 80%),
+    4em 0em 0 0em fadeout(@loadercolor, 80%),
+    2.8em 2.8em 0 0em fadeout(@loadercolor, 80%),
+    0em 4em 0 0em fadeout(@loadercolor, 80%),
+    -2.8em 2.8em 0 0em fadeout(@loadercolor, 80%),
+    -4em 0em 0 0em fadeout(@loadercolor, 50%),
+    -2.8em -2.8em 0 0em fadeout(@loadercolor, 30%);
   }
   12.5% {
-    box-shadow:0em -4em 0em 0em rgba(255,255,255,0.7),
-    2.8em -2.8em 0 0em rgba(255,255,255,1),
-    4em 0em 0 0em rgba(255,255,255,0.2),
-    2.8em 2.8em 0 0em rgba(255,255,255,0.2),
-    0em 4em 0 0em rgba(255,255,255,0.2),
-    -2.8em 2.8em 0 0em rgba(255,255,255,0.2),
-    -4em 0em 0 0em rgba(255,255,255,0.2),
-    -2.8em -2.8em 0 0em rgba(255,255,255,0.5);
+    box-shadow:0em -4em 0em 0em fadeout(@loadercolor, 30%),
+    2.8em -2.8em 0 0em @loadercolor,
+    4em 0em 0 0em fadeout(@loadercolor, 80%),
+    2.8em 2.8em 0 0em fadeout(@loadercolor, 80%),
+    0em 4em 0 0em fadeout(@loadercolor, 80%),
+    -2.8em 2.8em 0 0em fadeout(@loadercolor, 80%),
+    -4em 0em 0 0em fadeout(@loadercolor, 80%),
+    -2.8em -2.8em 0 0em fadeout(@loadercolor, 50%);
   }
   25% {
-    box-shadow:0em -4em 0em 0em rgba(255,255,255,0.5),
-    2.8em -2.8em 0 0em rgba(255,255,255,0.7),
-    4em 0em 0 0em rgba(255,255,255,1),
-    2.8em 2.8em 0 0em rgba(255,255,255,0.2),
-    0em 4em 0 0em rgba(255,255,255,0.2),
-    -2.8em 2.8em 0 0em rgba(255,255,255,0.2),
-    -4em 0em 0 0em rgba(255,255,255,0.2),
-    -2.8em -2.8em 0 0em rgba(255,255,255,0.2);
+    box-shadow:0em -4em 0em 0em fadeout(@loadercolor, 50%),
+    2.8em -2.8em 0 0em fadeout(@loadercolor, 30%),
+    4em 0em 0 0em @loadercolor,
+    2.8em 2.8em 0 0em fadeout(@loadercolor, 80%),
+    0em 4em 0 0em fadeout(@loadercolor, 80%),
+    -2.8em 2.8em 0 0em fadeout(@loadercolor, 80%),
+    -4em 0em 0 0em fadeout(@loadercolor, 80%),
+    -2.8em -2.8em 0 0em fadeout(@loadercolor, 80%);
   }
   37.5% {
-    box-shadow:0em -4em 0em 0em rgba(255,255,255,0.2),
-    2.8em -2.8em 0 0em rgba(255,255,255,0.5),
-    4em 0em 0 0em rgba(255,255,255,0.7),
-    2.8em 2.8em 0 0em rgba(255,255,255,0.2),
-    0em 4em 0 0em rgba(255,255,255,0.2),
-    -2.8em 2.8em 0 0em rgba(255,255,255,0.2),
-    -4em 0em 0 0em rgba(255,255,255,0.2),
-    -2.8em -2.8em 0 0em rgba(255,255,255,0.2);
+    box-shadow:0em -4em 0em 0em fadeout(@loadercolor, 80%),
+    2.8em -2.8em 0 0em fadeout(@loadercolor, 50%),
+    4em 0em 0 0em fadeout(@loadercolor, 30%),
+    2.8em 2.8em 0 0em fadeout(@loadercolor, 80%),
+    0em 4em 0 0em fadeout(@loadercolor, 80%),
+    -2.8em 2.8em 0 0em fadeout(@loadercolor, 80%),
+    -4em 0em 0 0em fadeout(@loadercolor, 80%),
+    -2.8em -2.8em 0 0em fadeout(@loadercolor, 80%);
   }
   50% {
 
-  box-shadow:0em -4em 0em 0em rgba(255,255,255,0.2),
-    2.8em -2.8em 0 0em rgba(255,255,255,0.2),
-    4em 0em 0 0em rgba(255,255,255,0.5),
-    2.8em 2.8em 0 0em rgba(255,255,255,0.7),
-    0em 4em 0 0em rgba(255,255,255,1),
-    -2.8em 2.8em 0 0em rgba(255,255,255,0.2),
-    -4em 0em 0 0em rgba(255,255,255,0.2),
-    -2.8em -2.8em 0 0em rgba(255,255,255,0.2);
+  box-shadow:0em -4em 0em 0em fadeout(@loadercolor, 80%),
+    2.8em -2.8em 0 0em fadeout(@loadercolor, 80%),
+    4em 0em 0 0em fadeout(@loadercolor, 50%),
+    2.8em 2.8em 0 0em fadeout(@loadercolor, 30%),
+    0em 4em 0 0em @loadercolor,
+    -2.8em 2.8em 0 0em fadeout(@loadercolor, 80%),
+    -4em 0em 0 0em fadeout(@loadercolor, 80%),
+    -2.8em -2.8em 0 0em fadeout(@loadercolor, 80%);
   }
   62.5% {
-    box-shadow:0em -4em 0em 0em rgba(255,255,255,0.2),
-    2.8em -2.8em 0 0em rgba(255,255,255,0.2),
-    4em 0em 0 0em rgba(255,255,255,0.2),
-    2.8em 2.8em 0 0em rgba(255,255,255,0.5),
-    0em 4em 0 0em rgba(255,255,255,0.7),
-    -2.8em 2.8em 0 0em rgba(255,255,255,1),
-    -4em 0em 0 0em rgba(255,255,255,0.2),
-    -2.8em -2.8em 0 0em rgba(255,255,255,0.2);
+    box-shadow:0em -4em 0em 0em fadeout(@loadercolor, 80%),
+    2.8em -2.8em 0 0em fadeout(@loadercolor, 80%),
+    4em 0em 0 0em fadeout(@loadercolor, 80%),
+    2.8em 2.8em 0 0em fadeout(@loadercolor, 50%),
+    0em 4em 0 0em fadeout(@loadercolor, 30%),
+    -2.8em 2.8em 0 0em @loadercolor,
+    -4em 0em 0 0em fadeout(@loadercolor, 80%),
+    -2.8em -2.8em 0 0em fadeout(@loadercolor, 80%);
   }
   75% {
-    box-shadow:0em -4em 0em 0em rgba(255,255,255,0.2),
-    2.8em -2.8em 0 0em rgba(255,255,255,0.2),
-    4em 0em 0 0em rgba(255,255,255,0.2),
-    2.8em 2.8em 0 0em rgba(255,255,255,0.2),
-    0em 4em 0 0em rgba(255,255,255,0.5),
-    -2.8em 2.8em 0 0em rgba(255,255,255,0.7),
-    -4em 0em 0 0em rgba(255,255,255,1),
-    -2.8em -2.8em 0 0em rgba(255,255,255,0.2);
+    box-shadow:0em -4em 0em 0em fadeout(@loadercolor, 80%),
+    2.8em -2.8em 0 0em fadeout(@loadercolor, 80%),
+    4em 0em 0 0em fadeout(@loadercolor, 80%),
+    2.8em 2.8em 0 0em fadeout(@loadercolor, 80%),
+    0em 4em 0 0em fadeout(@loadercolor, 50%),
+    -2.8em 2.8em 0 0em fadeout(@loadercolor, 30%),
+    -4em 0em 0 0em @loadercolor,
+    -2.8em -2.8em 0 0em fadeout(@loadercolor, 80%);
   }
   87.5% {
-    box-shadow:0em -4em 0em 0em rgba(255,255,255,0.2),
-    2.8em -2.8em 0 0em rgba(255,255,255,0.2),
-    4em 0em 0 0em rgba(255,255,255,0.2),
-    2.8em 2.8em 0 0em rgba(255,255,255,0.2),
-    0em 4em 0 0em rgba(255,255,255,0.2),
-    -2.8em 2.8em 0 0em rgba(255,255,255,0.5),
-    -4em 0em 0 0em rgba(255,255,255,0.7),
-    -2.8em -2.8em 0 0em rgba(255,255,255,1);
+    box-shadow:0em -4em 0em 0em fadeout(@loadercolor, 80%),
+    2.8em -2.8em 0 0em fadeout(@loadercolor, 80%),
+    4em 0em 0 0em fadeout(@loadercolor, 80%),
+    2.8em 2.8em 0 0em fadeout(@loadercolor, 80%),
+    0em 4em 0 0em fadeout(@loadercolor, 80%),
+    -2.8em 2.8em 0 0em fadeout(@loadercolor, 50%),
+    -4em 0em 0 0em fadeout(@loadercolor, 30%),
+    -2.8em -2.8em 0 0em @loadercolor;
   }
 }
