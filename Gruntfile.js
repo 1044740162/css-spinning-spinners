@@ -23,6 +23,17 @@ module.exports = function(grunt) {
         ext: '.css'
       }
     },
+    cssmin: {
+      target: {
+        files: [{
+          expand: true,
+          cwd: 'css/',
+          src: ['**/*.css'],
+          dest: 'css/',
+          ext: '.css'
+        }]
+      }
+    },
     watch: {
       files: ['less/**/*.less','jade/**/*.jade'],
       tasks: ['default']
@@ -33,8 +44,10 @@ module.exports = function(grunt) {
 
   grunt.loadNpmTasks('grunt-contrib-less');
 
+  grunt.loadNpmTasks('grunt-contrib-cssmin');
+
   grunt.loadNpmTasks('grunt-contrib-watch');
 
-  grunt.registerTask('default', ['less','jade','watch']);
+  grunt.registerTask('default', ['less','jade','cssmin','watch']);
 
 };
