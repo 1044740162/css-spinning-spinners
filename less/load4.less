@@ -1,12 +1,15 @@
-
-.load4 .loader {
+.load4 .loader:before {
+  content:"";
+  display:block;
+  position:absolute;
+  left:50%;
+  top:50%;
+  text-indent:-9999em;
   font-size:20px;
-  margin:5em auto;
+  margin:-.5em 0 0 -.5em;
   width:1em;
   height:1em;
   border-radius:50%;
-  position:relative;
-  text-indent:-9999em;
   -webkit-animation:load4 1.3s infinite linear;
   animation:load4 1.3s infinite linear;
   -webkit-transform: translateZ(0);

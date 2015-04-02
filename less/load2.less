@@ -1,12 +1,15 @@
-.load2 .loader {
+.load2 .loader:before {
+  content:"";
+  display:block;
+  position:absolute;
+  left:50%;
+  top:50%;
+  text-indent:-9999em;
   font-size:10px;
-  text-indent:-99999em;
-  margin:10em auto;
-  position:relative;
   width:0;
   height:0;
-  -webkit-animation:load2 1.2s infinite linear;
-  animation:load2 1.2s infinite linear;
+  -webkit-animation:load2 1.2s infinite ease-in-out;
+  animation:load2 1.2s infinite ease-in-out;
   -webkit-transform: translateZ(0);
   -ms-transform: translateZ(0);
   transform: translateZ(0);

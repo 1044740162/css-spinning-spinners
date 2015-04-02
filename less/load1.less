@@ -1,13 +1,16 @@
-.load1 .loader {
+.load1 .loader:before {
+  content:"";
+  display:block;
+  position:absolute;
+  left:50%;
+  top:50%;
+  text-indent:-9999em;
   -webkit-animation:load1 1s infinite ease-in-out;
   animation:load1 1s infinite ease-in-out;
   width:1em;
   height:4em;
   background:#fff;
-  
-  text-indent:-9999em;
-  margin:8em auto;
-  position:relative;
+  margin: -2em 0 0 -.5em;
   font-size:11px;
   -webkit-transform: translateZ(0);
   -ms-transform: translateZ(0);

@@ -1,10 +1,13 @@
-.load3 .loader {
-  font-size:10px;
-  margin:11em auto;
+.load3 .loader:before {
+  content:"";
+  display:block;
+  position:absolute;
+  left:50%;
+  top:50%;
   text-indent:-9999em;
+  font-size:10px;
   width:0;
   height:0;
-  position: relative;
   -webkit-animation:load3 1s infinite linear;
   animation:load3 1s infinite linear;
   -webkit-transform: translateZ(0);
