@@ -1,17 +1,19 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><title>Single Element CSS Spinners</title><meta name="viewport" content="width=device-width"><meta name="description" content="A collection of loading spinners animated with CSS"><meta property="og:title" content="Single Element CSS Spinners"><meta property="og:type" content="website"><meta property="og:description" content="A collection of loading spinners animated with CSS"><meta property="og:image" content="http://projects.lukehaas.me/css-loaders/images/css-loaders-screenshot.jpg"><meta property="og:url" content="http://projects.lukehaas.me/css-loaders/"><script src="script/modernizr-2.8.2.js"></script><link rel="stylesheet" href="css/main.css"><link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato:300"><link rel="stylesheet" href="css/load1.css"><link rel="stylesheet" href="css/load2.css"><link rel="stylesheet" href="css/load3.css"><link rel="stylesheet" href="css/load4.css"><link rel="stylesheet" href="css/load5.css"><link rel="stylesheet" href="css/load6.css"><link rel="stylesheet" href="css/load7.css"><link rel="stylesheet" href="css/load8.css"></head><body><header><div class="inner"><h1>Single Element CSS Spinners</h1></div></header><main><div class="inner"><div class="load-container load1"><div class="loader">Loading...</div><a href="#load1">&lt; View Source &gt;</a></div><div class="load-container load2"><div class="loader">Loading...</div><a href="#load2">&lt; View Source &gt;</a></div><div class="load-container load3"><div class="loader">Loading...</div><a href="#load3">&lt; View Source &gt;</a></div><div class="load-container load4"><div class="loader">Loading...</div><a href="#load4">&lt; View Source &gt;</a></div><div class="load-container load5"><div class="loader">Loading...</div><a href="#load5">&lt; View Source &gt;</a></div><div class="load-container load6"><div class="loader">Loading...</div><a href="#load6">&lt; View Source &gt;</a></div><div class="load-container load7"><div class="loader">Loading...</div><a href="#load7">&lt; View Source &gt;</a></div><div class="load-container load8"><div class="loader">Loading...</div><a href="#load8">&lt; View Source &gt;</a></div></div><a href="https://github.com/lukehaas/css-loaders" target="_blank" class="github"><img src="https://camo.githubusercontent.com/365986a132ccd6a44c23a9169022c0b5c890c387/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f7265645f6161303030302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png"></a><div class="overlay hidden"></div><!--really pissed off Jade can't handle vars in includes - should be able to just loop this:--><div id="load1" class="source hidden"><textarea readonly class="markup"><div class="loader">Loading...</div></textarea><textarea readonly class="css">.load1 .loader:before {
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><title>Single Element CSS Spinners</title><meta name="viewport" content="width=device-width"><meta name="description" content="A collection of loading spinners animated with CSS"><meta property="og:title" content="Single Element CSS Spinners"><meta property="og:type" content="website"><meta property="og:description" content="A collection of loading spinners animated with CSS"><meta property="og:image" content="http://projects.lukehaas.me/css-loaders/images/css-loaders-screenshot.jpg"><meta property="og:url" content="http://projects.lukehaas.me/css-loaders/"><script src="script/modernizr-2.8.2.js"></script><link rel="stylesheet" href="css/main.css"><link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato:300"><link rel="stylesheet" href="css/load1.css"><link rel="stylesheet" href="css/load2.css"><link rel="stylesheet" href="css/load3.css"><link rel="stylesheet" href="css/load4.css"><link rel="stylesheet" href="css/load5.css"><link rel="stylesheet" href="css/load6.css"><link rel="stylesheet" href="css/load7.css"><link rel="stylesheet" href="css/load8.css"></head><body><header><div class="inner"><h1>Single Element CSS Spinners</h1></div></header><main><div class="inner"><div class="load-container load1"><div class="loader">Loading...</div><a href="#load1">&lt; View Source &gt;</a></div><div class="load-container load2"><div class="loader">Loading...</div><a href="#load2">&lt; View Source &gt;</a></div><div class="load-container load3"><div class="loader">Loading...</div><a href="#load3">&lt; View Source &gt;</a></div><div class="load-container load4"><div class="loader">Loading...</div><a href="#load4">&lt; View Source &gt;</a></div><div class="load-container load5"><div class="loader">Loading...</div><a href="#load5">&lt; View Source &gt;</a></div><div class="load-container load6"><div class="loader">Loading...</div><a href="#load6">&lt; View Source &gt;</a></div><div class="load-container load7"><div class="loader">Loading...</div><a href="#load7">&lt; View Source &gt;</a></div><div class="load-container load8"><div class="loader">Loading...</div><a href="#load8">&lt; View Source &gt;</a></div></div><a href="https://github.com/lukehaas/css-loaders" target="_blank" class="github"><img src="https://camo.githubusercontent.com/365986a132ccd6a44c23a9169022c0b5c890c387/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f7265645f6161303030302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png"></a><div class="overlay hidden"></div><!--really pissed off Jade can't handle vars in includes - should be able to just loop this:--><div id="load1" class="source hidden"><textarea readonly class="markup"><div class="loader">Loading...</div></textarea><textarea readonly class="css">.loader:before {
   content: "";
   display: block;
   position: absolute;
   left: 50%;
   top: 50%;
+  font-size: 10px;
   text-indent: -9999em;
+}
+.load1 .loader:before {
   -webkit-animation: load1 1s infinite ease-in-out;
   animation: load1 1s infinite ease-in-out;
   width: 1.25em;
   height: 5em;
   background: #000000;
   margin: -2.5em 0 0 -0.625em;
-  font-size: 10px;
   -webkit-transform: translateZ(0);
   -ms-transform: translateZ(0);
   transform: translateZ(0);
@@ -70,14 +72,16 @@
     box-shadow: -1.875em 0em 0 0em #000000, 1.875em 0em 0 0em #000000, -1.875em 0em 0 0em #000000, -1.875em 0em 0 0em #000000, 0em 0em 0 0em #000000, 0em 0em 0 0em #000000, 1.875em -1.25em 0 0em #000000, 1.875em 1.25em 0 0em #000000;
   }
 }
-</textarea></div><div id="load2" class="source hidden"><textarea readonly class="markup"><div class="loader">Loading...</div></textarea><textarea readonly class="css">.load2 .loader:before {
+</textarea></div><div id="load2" class="source hidden"><textarea readonly class="markup"><div class="loader">Loading...</div></textarea><textarea readonly class="css">.loader:before {
   content: "";
   display: block;
   position: absolute;
   left: 50%;
   top: 50%;
-  text-indent: -9999em;
   font-size: 10px;
+  text-indent: -9999em;
+}
+.load2 .loader:before {
   width: 0;
   height: 0;
   -webkit-animation: load2 1.2s infinite ease-in-out;
@@ -108,14 +112,16 @@
     box-shadow: 2.75em 2.75em 0 2.25em #000000, -2.75em -2.75em 0 2.25em #000000;
   }
 }
-</textarea></div><div id="load3" class="source hidden"><textarea readonly class="markup"><div class="loader">Loading...</div></textarea><textarea readonly class="css">.load3 .loader:before {
+</textarea></div><div id="load3" class="source hidden"><textarea readonly class="markup"><div class="loader">Loading...</div></textarea><textarea readonly class="css">.loader:before {
   content: "";
   display: block;
   position: absolute;
   left: 50%;
   top: 50%;
-  text-indent: -9999em;
   font-size: 10px;
+  text-indent: -9999em;
+}
+.load3 .loader:before {
   width: 0;
   height: 0;
   -webkit-animation: load3 1s infinite linear;
@@ -148,14 +154,16 @@
     transform: rotate(90deg);
   }
 }
-</textarea></div><div id="load4" class="source hidden"><textarea readonly class="markup"><div class="loader">Loading...</div></textarea><textarea readonly class="css">.load4 .loader:before {
+</textarea></div><div id="load4" class="source hidden"><textarea readonly class="markup"><div class="loader">Loading...</div></textarea><textarea readonly class="css">.loader:before {
   content: "";
   display: block;
   position: absolute;
   left: 50%;
   top: 50%;
-  text-indent: -9999em;
   font-size: 10px;
+  text-indent: -9999em;
+}
+.load4 .loader:before {
   margin: -0.5em 0 0 -0.5em;
   width: 1em;
   height: 1em;
@@ -220,15 +228,17 @@
     box-shadow: 0em -4em 0em 0em #000000, 2.7em -2.7em 0 -0.5em #000000, 4em 0em 0 -0.5em #000000, 2.7em 2.7em 0 -0.5em #000000, 0em 4em 0 -0.5em #000000, -2.7em 2.7em 0 0em #000000, -4em 0em 0 0em #000000, -2.7em -2.7em 0 0.2em #000000;
   }
 }
-</textarea></div><div id="load5" class="source hidden"><textarea readonly class="markup"><div class="loader">Loading...</div></textarea><textarea readonly class="css">.load5 .loader:before {
+</textarea></div><div id="load5" class="source hidden"><textarea readonly class="markup"><div class="loader">Loading...</div></textarea><textarea readonly class="css">.loader:before {
   content: "";
   display: block;
   position: absolute;
   left: 50%;
   top: 50%;
-  text-indent: -9999em;
-  margin: -0.75em 0 0 -0.75em;
   font-size: 10px;
+  text-indent: -9999em;
+}
+.load5 .loader:before {
+  margin: -0.75em 0 0 -0.75em;
   width: 1.5em;
   height: 1.5em;
   border-radius: 50%;
@@ -292,14 +302,16 @@
     box-shadow: 0em -4em 0em 0em rgba(0, 0, 0, 0.2), 2.8em -2.8em 0 0em rgba(0, 0, 0, 0.2), 4em 0em 0 0em rgba(0, 0, 0, 0.2), 2.8em 2.8em 0 0em rgba(0, 0, 0, 0.2), 0em 4em 0 0em rgba(0, 0, 0, 0.2), -2.8em 2.8em 0 0em rgba(0, 0, 0, 0.5), -4em 0em 0 0em rgba(0, 0, 0, 0.7), -2.8em -2.8em 0 0em #000000;
   }
 }
-</textarea></div><div id="load6" class="source hidden"><textarea readonly class="markup"><div class="loader">Loading...</div></textarea><textarea readonly class="css">.load6 .loader:before {
+</textarea></div><div id="load6" class="source hidden"><textarea readonly class="markup"><div class="loader">Loading...</div></textarea><textarea readonly class="css">.loader:before {
   content: "";
   display: block;
   position: absolute;
   left: 50%;
   top: 50%;
-  text-indent: -9999em;
   font-size: 10px;
+  text-indent: -9999em;
+}
+.load6 .loader:before {
   overflow: hidden;
   width: 1em;
   height: 1em;
@@ -363,13 +375,16 @@
     box-shadow: 0 -4.15em 0 0em #000000, 0 -4.15em 0 -0.1em #000000, 0 -4.15em 0 -0.2em #000000, 0 -4.15em 0 -0.3em #000000, 0 -4.15em 0 -0.315em #000000;
   }
 }
-</textarea></div><div id="load7" class="source hidden"><textarea readonly class="markup"><div class="loader">Loading...</div></textarea><textarea readonly class="css">.load7 .loader:before {
+</textarea></div><div id="load7" class="source hidden"><textarea readonly class="markup"><div class="loader">Loading...</div></textarea><textarea readonly class="css">.loader:before {
   content: "";
   display: block;
   position: absolute;
   left: 50%;
   top: 50%;
+  font-size: 10px;
   text-indent: -9999em;
+}
+.load7 .loader:before {
   border-radius: 50%;
   width: 2.5em;
   height: 2.5em;
@@ -378,7 +393,6 @@
   -webkit-animation: load7 1.8s infinite ease-in-out;
   animation: load7 1.8s infinite ease-in-out;
   margin: -3.75em 0 0 -1.25em;
-  font-size: 10px;
   -webkit-transform: translateZ(0);
   -ms-transform: translateZ(0);
   transform: translateZ(0);
@@ -425,14 +439,16 @@
     box-shadow: -3.5em 2.5em 0 -1.3em #000000, 0em 2.5em 0 -1.3em #000000, 3.5em 2.5em 0 -0.65em #000000;
   }
 }
-</textarea></div><div id="load8" class="source hidden"><textarea readonly class="markup"><div class="loader">Loading...</div></textarea><textarea readonly class="css">.load8 .loader:before {
+</textarea></div><div id="load8" class="source hidden"><textarea readonly class="markup"><div class="loader">Loading...</div></textarea><textarea readonly class="css">.loader:before {
   content: "";
   display: block;
   position: absolute;
   left: 50%;
   top: 50%;
-  text-indent: -9999em;
   font-size: 10px;
+  text-indent: -9999em;
+}
+.load8 .loader:before {
   border-radius: 50%;
   width: 8em;
   height: 8em;

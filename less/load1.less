@@ -1,18 +1,12 @@
+@import "load.less";
 @loadercolor: #000;
 .load1 .loader:before {
-  content:"";
-  display:block;
-  position:absolute;
-  left:50%;
-  top:50%;
-  text-indent:-9999em;
   -webkit-animation:load1 1s infinite ease-in-out;
   animation:load1 1s infinite ease-in-out;
   width:1.25em;
   height:5em;
   background:@loadercolor;
   margin: -2.5em 0 0 -.625em;
-  font-size:10px;
   -webkit-transform: translateZ(0);
   -ms-transform: translateZ(0);
   transform: translateZ(0);

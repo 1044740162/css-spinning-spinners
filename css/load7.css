@@ -1,10 +1,13 @@
-.load7 .loader:before {
+.loader:before {
   content: "";
   display: block;
   position: absolute;
   left: 50%;
   top: 50%;
+  font-size: 10px;
   text-indent: -9999em;
+}
+.load7 .loader:before {
   border-radius: 50%;
   width: 2.5em;
   height: 2.5em;
@@ -13,7 +16,6 @@
   -webkit-animation: load7 1.8s infinite ease-in-out;
   animation: load7 1.8s infinite ease-in-out;
   margin: -3.75em 0 0 -1.25em;
-  font-size: 10px;
   -webkit-transform: translateZ(0);
   -ms-transform: translateZ(0);
   transform: translateZ(0);

@@ -1,11 +1,13 @@
-.load4 .loader:before {
+.loader:before {
   content: "";
   display: block;
   position: absolute;
   left: 50%;
   top: 50%;
-  text-indent: -9999em;
   font-size: 10px;
+  text-indent: -9999em;
+}
+.load4 .loader:before {
   margin: -0.5em 0 0 -0.5em;
   width: 1em;
   height: 1em;
