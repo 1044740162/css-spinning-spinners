@@ -1,18 +1,19 @@
 @import "load.less";
 @loadercolor: #000;
-.load6 .loader:before {
-  overflow: hidden;
+.loading:before, .loader-animation-6 .loading:before {
   width:1em;
   height:1em;
-  border-radius:50%;
   margin:-.5em 0 0 -.5em;
-  transform: translateZ(0);
-  animation:load6 1.7s infinite ease;
+  border:none;
+  border-radius:50%;
+  background:transparent;
+  animation:loader-animation-6 1.7s infinite ease;
+  transform:translateZ(0);
 }
 
-@keyframes load6 {.load6-frames;}
+@keyframes loader-animation-6 {.loader-animation-6-frames;}
 
-.load6-frames() {
+.loader-animation-6-frames() {
   0% {
     transform:rotate(0deg);
     box-shadow:

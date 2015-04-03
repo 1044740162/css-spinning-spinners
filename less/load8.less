@@ -1,19 +1,20 @@
 @import "load.less";
 @loadercolor: #000;
-.load8 .loader:before {
-  border-radius:50%;
+.loading:before, .loader-animation-8 .loading:before {
   width:8em;
   height:8em;
   margin:-5em 0 0 -5em;
   border:1em solid fadeout(@loadercolor, 80%);
   border-left:1em solid @loadercolor;
-  transform: translateZ(0);
-  animation:load8 1.1s infinite linear;
+  border-radius:50%;
+  background:transparent;
+  animation:loader-animation-8 1.1s infinite linear;
+  transform:translateZ(0);
 }
 
-@keyframes load8 {.load8-frames;}
+@keyframes loader-animation-8 {.loader-animation-8-frames;}
 
-.load8-frames() {
+.loader-animation-8-frames() {
   0% {
   	transform:rotate(0deg);
   }

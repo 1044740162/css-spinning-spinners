@@ -1,17 +1,19 @@
 @import "load.less";
 @loadercolor: #000;
-.load4 .loader:before {
-  margin:-.5em 0 0 -.5em;
+.loading:before, .loader-animation-4 .loading:before {
   width:1em;
   height:1em;
+  margin:-.5em 0 0 -.5em;
+  border:none;
   border-radius:50%;
-  animation:load4 1.3s infinite linear;
-  transform: translateZ(0);
+  background:transparent;
+  animation:loader-animation-4 1.3s infinite linear;
+  transform:translateZ(0);
 }
 
-@keyframes load4 {.load4-frames;}
+@keyframes loader-animation-4 {.loader-animation-4-frames;}
 
-.load4-frames() {
+.loader-animation-4-frames() {
   0%,100% {
     box-shadow:0em -4em 0em 0.2em @loadercolor,
     2.7em -2.7em 0 0em @loadercolor,

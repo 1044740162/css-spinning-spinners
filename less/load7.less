@@ -1,18 +1,19 @@
 @import "load.less";
 @loadercolor: #000;
-.load7 .loader:before {
-  border-radius:50%;
+.loading:before, .loader-animation-7 .loading:before {
   width:2.5em;
   height:2.5em;
-  animation-fill-mode: both;
-  animation:load7 1.8s infinite ease-in-out;
   margin:-3.75em 0 0 -1.25em;
-  transform: translateZ(0);
+  border:none;
+  border-radius:50%;
+  background:transparent;
+  animation:loader-animation-7 1.8s infinite ease-in-out;
+  transform:translateZ(0);
 }
 
-@keyframes load7 {.load7-frames;}
+@keyframes loader-animation-7 {.loader-animation-7-frames;}
 
-.load7-frames() {
+.loader-animation-7-frames() {
   0%,100% {
     box-shadow: -3.5em 2.5em 0 -1.3em @loadercolor, 0em 2.5em 0 -1.3em @loadercolor, 3.5em 2.5em 0 -1.3em @loadercolor;
   }
