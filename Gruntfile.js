@@ -7,20 +7,31 @@ module.exports = function(grunt) {
       compile: {
           files: [{
               expand: true,
-              cwd: 'jade/',
+              cwd: 'src/demo/',
               src: ['**/*.jade'],
-              dest: '',
+              dest: 'demo/',
               ext: '.html'
           }]
       }
     },
     less: {
       src: {
-        expand: true,
-        cwd: 'less/',
-        src: ['**/*.less'],
-        dest: 'css/',
-        ext: '.css'
+        files: [
+          { 
+            expand: true,
+            cwd: 'src/less/',
+            src: ['**/*.less', '!**/load.less'],
+            dest: 'dist/css/',
+            ext: '.css'
+          },
+          { 
+            expand: true,
+            cwd: 'src/demo/less',
+            src: ['**/*.less'],
+            dest: 'demo/css/',
+            ext: '.css'
+          }
+        ],
       }
     },
     autoprefixer: {
@@ -28,25 +39,35 @@ module.exports = function(grunt) {
         browsers: ['last 2 versions', 'Opera >= 15', 'Chrome >= 4', 'Firefox >= 16', 'Safari >= 4']
       },
       css: {
-        expand: true,
-        flatten: true,
-        src: 'css/*.css',
-        dest: 'css/'
+        files: [
+          {
+            expand: true,
+            flatten: true,
+            src: 'dist/css/*.css',
+            dest: 'dist/css/'
+          },
+          {
+            expand: true,
+            flatten: true,
+            src: 'demo/css/*.css',
+            dest: 'demo/css/'
+          }
+        ]
       }
     },
     cssmin: {
       target: {
         files: [{
           expand: true,
-          cwd: 'css/',
+          cwd: 'dist/css/',
           src: ['**/*.css'],
-          dest: 'css/',
+          dest: 'dist/css/',
           ext: '.css'
         }]
       }
     },
     watch: {
-      files: ['less/**/*.less','jade/**/*.jade'],
+      files: ['src/less/**/*.less','src/jade/**/*.jade'],
       tasks: ['default']
     }
   });

@@ -7,7 +7,7 @@
     "BillyNate"
   ],
   "description": "A collection of zero element loading spinners, animated by CSS only",
-  "main": "css/",
+  "main": "dist/css/",
   "moduleType": [
     "globals"
   ],
@@ -22,13 +22,10 @@
     "node_modules",
     "bower_components",
     "tests",
-    "images",
-    "jade",
-    "less",
-    "script",
+    "src",
+    "demo",
     "Gruntfile.js",
     "package.json",
-    "index.html",
     "README.md"
   ]
 }
