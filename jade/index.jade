@@ -29,31 +29,11 @@ html(lang="en")
 
 			a.github(href="https://github.com/lukehaas/css-loaders",target="_blank"): img(src="https://camo.githubusercontent.com/365986a132ccd6a44c23a9169022c0b5c890c387/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f7265645f6161303030302e706e67",alt="Fork me on GitHub",data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png")
 			div(class="overlay hidden")
-			//really pissed off Jade can't handle vars in includes - should be able to just loop this:
-			div(class="source hidden",id="load1")
-				textarea.markup("readonly"): <div class="loader">Loading...</div>
-				textarea.css("readonly"): include ../css/load1.css
-			div(class="source hidden",id="load2")
-				textarea.markup("readonly"): <div class="loader">Loading...</div>
-				textarea.css("readonly"): include ../css/load2.css
-			div(class="source hidden",id="load3")
-				textarea.markup("readonly"): <div class="loader">Loading...</div>
-				textarea.css("readonly"): include ../css/load3.css
-			div(class="source hidden",id="load4")
-				textarea.markup("readonly"): <div class="loader">Loading...</div>
-				textarea.css("readonly"): include ../css/load4.css
-			div(class="source hidden",id="load5")
-				textarea.markup("readonly"): <div class="loader">Loading...</div>
-				textarea.css("readonly"): include ../css/load5.css
-			div(class="source hidden",id="load6")
-				textarea.markup("readonly"): <div class="loader">Loading...</div>
-				textarea.css("readonly"): include ../css/load6.css
-			div(class="source hidden",id="load7")
-				textarea.markup("readonly"): <div class="loader">Loading...</div>
-				textarea.css("readonly"): include ../css/load7.css
-			div(class="source hidden",id="load8")
-				textarea.markup("readonly"): <div class="loader">Loading...</div>
-				textarea.css("readonly"): include ../css/load8.css
+			- for(var i = 1;i < 9;i++)
+				div(class="source hidden",id="load#{i}")
+					textarea.markup("readonly")
+						<link rel="stylesheet" href="css/load#{i}.css" />
+						<div class="loader">Loading...</div>
 		footer
 			div.inner
 				a.twitter(href="http://twitter.com/lukehaas",target="_blank")
