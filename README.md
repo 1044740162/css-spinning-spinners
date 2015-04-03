@@ -1,21 +1,20 @@
-# [Single Element CSS Spinners](http://projects.lukehaas.me/css-loaders)
+# Zero Element CSS Spinners
 
-This is a collection of loading spinners animated with CSS.
+This is a collection of loading spinners animated by CSS only.
 
-Each spinner consists of a single `div` with a class of `loader` and content text of "Loading...".
-The text is for screen readers and can be used as a fallback state for older browsers.
+Each spinner is applied to elements with a class of `loading` by utilizing the :before pseudo-element.
 
 The aim of this project was to create a set of minimal loading spinners that are visually appealing and also convey their intended meaning.
 
-A strict limit of one element per loader (not including pseudo-elements) was placed on this project based on the belief that something as simple as a loader doesn't deserve more.
+A strict limit of no additional elements was placed on this project based on the belief that something as simple as a loader shouldn't need more.
 
-Each loader is given a font size in pixels and all other sizes are in ems so to change the size of a loader, just adjust the font-size.
+Each loader is given a font size in of 10px and all other sizes are in ems so to change the size of a loader, just adjust the font-size.
 
 ## Demo
 
-[![css-loaders-screenshot](https://raw.githubusercontent.com/lukehaas/css-loaders/step2/images/css-loaders-screenshot.jpg)](http://projects.lukehaas.me/css-loaders)
+[![css-loaders-screenshot](http://billynate.github.io/css-loaders/images/css-loaders-screenshot.jpg)](http://billynate.github.io/css-loaders)
 
-> [Check it live](http://projects.lukehaas.me/css-loaders).
+> [Check it live](http://billynate.github.io/css-loaders).
 
 ## Browser Support
 
@@ -33,9 +32,8 @@ IE 10+ ✔ | Chrome 4.0+ ✔ | Firefox 16.0+ ✔ | Opera 15.0+ ✔ | Safari 4.0+
 
 ## History
 
-For detailed changelog, check [Releases](https://github.com/lukehaas/css-loaders/releases).
+For detailed changelog, check [Releases](https://github.com/BillyNate/css-loaders/releases).
 
 ## License
 
-[MIT License](https://github.com/lukehaas/css-loaders/blob/step2/LICENSE)
-
+[MIT License](LICENSE)
