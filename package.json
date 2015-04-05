@@ -1,5 +1,5 @@
 {
-  "name": "css-loaders",
+  "name": "css-spinning-spinners",
   "version": "1.1.0",
   "description": "A collection of zero element loading spinners, animated by CSS only",
   "main": "Gruntfile.js",
@@ -12,10 +12,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/BillyNate/css-loaders.git"
+    "url": "https://github.com/BillyNate/css-spinning-spinners.git"
   },
   "bugs": {
-    "url": "https://github.com/BillyNate/css-loaders/issues"
+    "url": "https://github.com/BillyNate/css-spinning-spinners/issues"
   },
   "license": "MIT",
   "devDependencies": {

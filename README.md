@@ -1,4 +1,4 @@
-# Zero Element CSS Spinners
+# CSS Spinning Spinners
 
 This is a collection of loading spinners animated by CSS only.
 
@@ -12,9 +12,9 @@ Each loader is given a font size in of 10px and all other sizes are in ems so to
 
 ## Demo
 
-[![css-loaders-screenshot](http://billynate.github.io/css-loaders/images/css-loaders-screenshot.jpg)](http://billynate.github.io/css-loaders)
+[![css-loaders-screenshot](http://billynate.github.io/css-spinning-spinners/images/css-loaders-screenshot.jpg)](http://billynate.github.io/css-spinning-spinners)
 
-> [Check it live](http://billynate.github.io/css-loaders).
+> [Check it live](http://billynate.github.io/css-spinning-spinners).
 
 ## Browser Support
 
@@ -32,7 +32,7 @@ IE 10+ ✔ | Chrome 4.0+ ✔ | Firefox 16.0+ ✔ | Opera 15.0+ ✔ | Safari 4.0+
 
 ## History
 
-For detailed changelog, check [Releases](https://github.com/BillyNate/css-loaders/releases).
+For detailed changelog, check [Releases](https://github.com/BillyNate/css-spinning-spinners/releases).
 
 ## License
 
