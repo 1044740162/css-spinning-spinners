@@ -26,6 +26,8 @@
     "demo",
     "Gruntfile.js",
     "package.json",
-    "README.md"
+    "README.md",
+    ".travis.yml",
+    "travis-deploy.sh"
   ]
 }

@@ -84,4 +84,6 @@ module.exports = function(grunt) {
 
   grunt.registerTask('default', ['less','autoprefixer','cssmin','jade','watch']);
 
+  grunt.registerTask('deploy', ['less','autoprefixer','cssmin','jade']);
+
 };
