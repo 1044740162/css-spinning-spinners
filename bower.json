@@ -1,12 +1,13 @@
 {
   "name": "css-loading-spinners",
   "version": "1.0.0",
-  "homepage": "https://github.com/lukehaas/css-loaders",
+  "homepage": "https://github.com/BillyNate/css-loaders",
   "authors": [
-    "Luke Haas <lukehaas7@gmail.com>"
+    "Luke Haas <lukehaas7@gmail.com>",
+    "BillyNate"
   ],
-  "description": "A collection of single element loading spinners, animated with CSS ",
-  "main": "css",
+  "description": "A collection of zero element loading spinners, animated by CSS only",
+  "main": "css/",
   "moduleType": [
     "globals"
   ],
@@ -20,6 +21,14 @@
     "**/.*",
     "node_modules",
     "bower_components",
-    "tests"
+    "tests",
+    "images",
+    "jade",
+    "less",
+    "script",
+    "Gruntfile.js",
+    "package.json",
+    "index.html",
+    "README.md"
   ]
 }
