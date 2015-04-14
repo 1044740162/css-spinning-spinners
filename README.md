@@ -8,7 +8,7 @@ The aim of this project was to create a set of minimal loading spinners that are
 
 A strict limit of no additional elements was placed on this project based on the belief that something as simple as a loader shouldn't need more.
 
-Each loader is given a font size in of 10px and all other sizes are in ems so to change the size of a loader, just adjust the font-size.
+Each loader is given a font size of 10px and all other sizes are in ems. To change the size of a loader, just adjust the font-size.
 
 ## Usage
 
