@@ -10,6 +10,34 @@ A strict limit of no additional elements was placed on this project based on the
 
 Each loader is given a font size in of 10px and all other sizes are in ems so to change the size of a loader, just adjust the font-size.
 
+## Usage
+
+Load the stylesheet of the spinner you want into the head of your page:
+```html
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/css-spinning-spinners/1.1.0/load2.css" />
+```
+
+Apply the class `loading` to any element within the body of your page:
+```html
+<div class="loading"></div>
+```
+
+Or when doing an AJAX request in jQuery:
+```javascript
+$('el').addClass('loading').load('someurl.ext', function() {
+	$(this).removeClass('loading');
+});
+```
+
+&nbsp;
+
+To change the size of the spinner set the font-size in your stylesheet:
+```css
+.loading:before { font-size: 20px; }
+```
+
+&nbsp;
+
 ## Demo
 
 [![css-loaders-screenshot](http://billynate.github.io/css-spinning-spinners/images/css-loaders-screenshot.jpg)](http://billynate.github.io/css-spinning-spinners)
