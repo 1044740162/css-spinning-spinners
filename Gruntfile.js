@@ -67,7 +67,7 @@ module.exports = function(grunt) {
       }
     },
     watch: {
-      files: ['src/less/**/*.less','src/jade/**/*.jade'],
+      files: ['src/less/*.less','src/jade/*.jade'],
       tasks: ['default']
     }
   });
@@ -82,8 +82,10 @@ module.exports = function(grunt) {
 
   grunt.loadNpmTasks('grunt-contrib-watch');
 
-  grunt.registerTask('default', ['less','autoprefixer','cssmin','jade','watch']);
+  grunt.registerTask('default', ['less','autoprefixer','cssmin','jade']);
 
-  grunt.registerTask('deploy', ['less','autoprefixer','cssmin','jade']);
+  grunt.registerTask('deploy', ['default']);
+
+  grunt.registerTask('dev', ['default','watch']);
 
 };
